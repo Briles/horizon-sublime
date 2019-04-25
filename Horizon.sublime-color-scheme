@@ -1,0 +1,375 @@
+{
+    "name": "Horizon",
+    "homepage": "https://github.com/Briles/horizon-sublime",
+    "description": "Based on Horizon for Visual Studio Code (https://github.com/jolaleye/horizon-theme-vscode)",
+    "originalAuthor": "https://github.com/jolaleye",
+    "author": "Brian Reilly (https://github.com/Briles)",
+    "variables": {
+        "black": "#1C1E26",
+        "woodsmoke": "#16161C",
+        "black_1": "#232530",
+        "black_2": "#2E303E",
+        "black_3": "#6C6F93",
+        "iron": "#D5D8DA",
+        "lavender": "#B877DB",
+        "mandy": "#E95678",
+        "mandy_1": "#E95378",
+        "java": "#25B0BC",
+        "apricot": "#F09483",
+        "rose_bud": "#FAB795",
+        "corvette": "#FAC29A",
+        "silver": "#BBBBBB",
+        "blue": "#26BBD9",
+        "bright_blue": "#3FC4DE",
+        "cyan": "#59E1E3",
+        "bright_cyan": "#6BE4E6",
+        "green": "#29D398",
+        "bright_green": "#3FDAA4",
+        "magenta": "#EE64AC",
+        "bright_magenta": "#F075B5",
+        "red": "#E95678",
+        "bright_red": "#EC6A88",
+        "yellow": "#FAB795",
+        "bright_yellow": "#FBC3A7",
+        "carnation": "#F43E5C",
+        "corvette_1": "#FAC39A",
+        "shamrock": "#27D797",
+        "spring_green": "#09F7A0",
+        "java_1": "#21BFC2",
+        "black_s": "color(#1C1E26 a(0.9))",
+        "woodsmoke_s": "color(#16161C a(0.9))",
+        "black_1_s": "color(#232530 a(0.9))",
+        "black_2_s": "color(#2E303E a(0.9))",
+        "black_3_s": "color(#6C6F93 a(0.9))",
+        "iron_s": "color(#D5D8DA a(0.9))",
+        "lavender_s": "color(#B877DB a(0.9))",
+        "mandy_s": "color(#E95678 a(0.9))",
+        "mandy_1_s": "color(#E95378 a(0.9))",
+        "java_s": "color(#25B0BC a(0.9))",
+        "apricot_s": "color(#F09483 a(0.9))",
+        "rose_bud_s": "color(#FAB795 a(0.9))",
+        "corvette_s": "color(#FAC29A a(0.9))",
+        "silver_s": "color(#BBBBBB a(0.9))",
+        "blue_s": "color(#26BBD9 a(0.9))",
+        "bright_blue_s": "color(#3FC4DE a(0.9))",
+        "cyan_s": "color(#59E1E3 a(0.9))",
+        "bright_cyan_s": "color(#6BE4E6 a(0.9))",
+        "green_s": "color(#29D398 a(0.9))",
+        "bright_green_s": "color(#3FDAA4 a(0.9))",
+        "magenta_s": "color(#EE64AC a(0.9))",
+        "bright_magenta_s": "color(#F075B5 a(0.9))",
+        "red_s": "color(#E95678 a(0.9))",
+        "bright_red_s": "color(#EC6A88 a(0.9))",
+        "yellow_s": "color(#FAB795 a(0.9))",
+        "bright_yellow_s": "color(#FBC3A7 a(0.9))",
+        "carnation_s": "color(#F43E5C a(0.9))",
+        "corvette_1_s": "color(#FAC39A a(0.9))",
+        "shamrock_s": "color(#27D797 a(0.9))",
+        "spring_green_s": "color(#09F7A0 a(0.9))",
+        "java_1_s": "color(#21BFC2 a(0.9))",
+        "background": "#1C1E26",
+        "foreground": "#BBBBBB",
+        "border": "color(var(background) l(- 10%))",
+        "shadow": "var(woodsmoke)",
+        "guide": "color(var(foreground) a(0.2))",
+        "active_guide": "color(var(black_3) a(0.4))",
+        "stack_guide": "var(black_2)",
+        "ruler": "color(var(black_3) a(0.2))",
+        "heading_background": "color(var(background) l(+ 7%))",
+        "invisibles": "color(var(foreground) a(0.25))",
+        "--background": "var(background)",
+        "--foreground": "var(foreground)",
+        "--redish": "var(bright_red)",
+        "--yellowish": "var(bright_yellow)",
+        "--greenish": "var(bright_green)",
+        "--cyanish": "var(bright_cyan)",
+        "--bluish": "var(bright_blue)",
+        "--purplish": "var(bright_magenta)"
+    },
+    "globals": {
+        "background": "var(background)",
+        "foreground": "var(foreground)",
+        "invisibles": "var(invisibles)",
+        "caret": "var(mandy_1)",
+        "block_caret": "var(foreground)",
+        "line_highlight": "color(var(black_2) a(0.3))",
+        "misspelling": "var(red)",
+        "fold_marker": "var(mandy_1)",
+        "minimap_border": "var(border)",
+        "accent": "var(mandy_1)",
+        "gutter": "var(background)",
+        "gutter_foreground": "color(var(iron) a(0.3))",
+        "line_diff_width": "3",
+        "line_diff_added": "color(var(spring_green) a(0.6))",
+        "line_diff_modified": "color(var(java_1) a(0.6))",
+        "line_diff_deleted": "color(var(carnation) a(0.6))",
+        "selection": "color(var(black_3) a(0.15))",
+        "selection_border_width": "0",
+        "inactive_selection": "color(var(black_3) a(0.1))",
+        "selection_corner_style": "round",
+        "selection_corner_radius": "0",
+        "highlight": "color(var(black_3) a(0.6))",
+        "find_highlight": "color(var(black_3) a(0.6))",
+        "guide": "var(guide)",
+        "active_guide": "var(active_guide)",
+        "stack_guide": "var(stack_guide)",
+        "brackets_options": "underline",
+        "brackets_foreground": "var(mandy_1)",
+        "bracket_contents_options": "underline",
+        "bracket_contents_foreground": "var(mandy_1)",
+        "tags_options": "underline",
+        "tags_foreground": "var(mandy_1)",
+        "shadow": "var(shadow)",
+        "shadow_width": "6"
+    },
+    "rules": [
+        {
+            "name": "Text and Source Base Colors",
+            "scope": "none,source,text",
+            "foreground": "var(foreground)"
+        },
+        {
+            "name": "Punctuation",
+            "scope": "punctuation,punctuation.definition.string",
+            "foreground": "color(var(foreground) a(0.77))"
+        },
+        {
+            "name": "Comments",
+            "scope": "comment,comment text,markup.strikethrough,punctuation.definition.comment,punctuation.whitespace.comment,string.comment,text.cancelled",
+            "font_style": "italic",
+            "foreground": "color(var(iron) a(0.2))"
+        },
+        {
+            "name": "Keywords Inside Comments",
+            "scope": "comment.keyword,comment.keyword.punctuation,comment.parameter,comment.punctuation,comment.string,comment.type,keyword.other.phpdoc.php,punctuation.definition.keyword.javadoc,source.groovy keyword.other.documentation,source.java keyword.other.documentation,storage.type.annotation.coffeescript,storage.type.class.jsdoc,storage.type.class.jsdoc punctuation.definition",
+            "foreground": "var(bright_white)"
+        },
+        {
+            "name": "Strings",
+            "scope": "meta.object-literal.key string,string",
+            "foreground": "var(rose_bud_s)"
+        },
+        {
+            "name": "Variables",
+            "scope": "entity.name.val.declaration,entity.name.variable,meta.definition.variable,meta.interpolation,storage.type.variable,support.type.custom-property,support.type.variable-name,variable,variable.interpolation variable,variable.other.interpolation variable,variable.parameter.dosbatch,variable.parameter.output.function.matlab,variable.parameter.sass",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Language variable",
+            "scope": "variable.language",
+            "foreground": "var(corvette_s)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Parameter",
+            "scope": "variable.parameter",
+            "font_style": "italic"
+        },
+        {
+            "name": "Storage (declaration or modifier keyword)",
+            "scope": "storage.modifier,storage.type",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "Constant",
+            "scope": "constant",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Regex",
+            "scope": "string.regexp",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Language constant (boolean, null)",
+            "scope": "constant.language",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Character escape",
+            "scope": "constant.character.escape",
+            "foreground": "var(java_s)"
+        },
+        {
+            "name": "Entity",
+            "scope": "entity.name",
+            "foreground": "var(corvette_s)"
+        },
+        {
+            "name": "HTML or XML tag",
+            "scope": "entity.name.tag",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "HTML or XML tag brackets",
+            "scope": "punctuation.definition.tag",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Tag atttribute",
+            "scope": "entity.other.attribute-name",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Class",
+            "scope": "entity.name.type",
+            "foreground": "var(corvette_s)"
+        },
+        {
+            "name": "Inherited class",
+            "scope": "entity.other.inherited-class",
+            "foreground": "var(rose_bud_s)"
+        },
+        {
+            "name": "Function",
+            "scope": "entity.name.function,variable.function",
+            "foreground": "var(java_s)"
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "Control keyword (if, try, while, etc.)",
+            "scope": "keyword.control",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "Operator",
+            "scope": "keyword.operator",
+            "foreground": "var(silver)"
+        },
+        {
+            "name": "Special operator",
+            "scope": "keyword.operator.expression,keyword.operator.logical,keyword.operator.new",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "Unit",
+            "scope": "keyword.other.unit",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Support",
+            "scope": "support",
+            "foreground": "var(corvette_s)"
+        },
+        {
+            "name": "Support function",
+            "scope": "support.function",
+            "foreground": "var(java_s)"
+        },
+        {
+            "name": "Support variable",
+            "scope": "support.variable",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Object literal key / property",
+            "scope": "meta.object-literal.key,support.type.property-name",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Key-value separator",
+            "scope": "punctuation.separator.key-value",
+            "foreground": "var(silver)"
+        },
+        {
+            "name": "Embedded puncuation",
+            "scope": "punctuation.section.embedded",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "Template expression",
+            "scope": "punctuation.definition.template-expression.begin,punctuation.definition.template-expression.end",
+            "foreground": "var(lavender_s)"
+        },
+        {
+            "name": "CSS property",
+            "scope": "support.type.property-name.css",
+            "foreground": "var(silver)"
+        },
+        {
+            "name": "Color",
+            "scope": "constant.other.color",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Font names",
+            "scope": "support.constant.font-name",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "CSS #id",
+            "scope": "entity.other.attribute-name.id",
+            "foreground": "var(java_s)"
+        },
+        {
+            "name": "Pseudo CSS",
+            "scope": "entity.other.attribute-name.pseudo-class,entity.other.attribute-name.pseudo-element",
+            "foreground": "var(rose_bud_s)"
+        },
+        {
+            "name": "CSS support functions (rgb)",
+            "scope": "support.function.misc.css",
+            "foreground": "var(corvette_s)"
+        },
+        {
+            "name": "Markup heading",
+            "scope": "entity.name.section,markup.heading",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Markup quote",
+            "scope": "markup.quote",
+            "foreground": "color(var(silver) a(0.8))",
+            "font_style": "italic"
+        },
+        {
+            "name": "Markup list",
+            "scope": "beginning.punctuation.definition.list",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "Markup link",
+            "scope": "markup.underline.link",
+            "foreground": "var(rose_bud_s)"
+        },
+        {
+            "name": "Markup link description",
+            "scope": "string.other.link.description",
+            "foreground": "var(apricot_s)"
+        },
+        {
+            "name": "Python function call",
+            "scope": "meta.function-call.generic.python",
+            "foreground": "var(java_s)"
+        },
+        {
+            "name": "C# storage type",
+            "scope": "storage.type.cs",
+            "foreground": "var(corvette_s)"
+        },
+        {
+            "name": "C# local variable",
+            "scope": "entity.name.variable.local.cs",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "C# properties and fields",
+            "scope": "entity.name.variable.field.cs,entity.name.variable.property.cs",
+            "foreground": "var(mandy_s)"
+        },
+        {
+            "name": "C++ operators",
+            "scope": "source.cpp keyword.operator",
+            "foreground": "var(lavender_s)"
+        }
+    ]
+}
